@@ -137,7 +137,7 @@ var autoGif = function () {};
             }
         } catch (err) {
             // Something (not surprisingly) broke, but this isn't critical enough to completely bail over
-            //console.error("DiscordAutoGif", this, err);
+            console.error("DiscordAutoGif", this, err);
             return;
         }
     }
@@ -172,7 +172,7 @@ var autoGif = function () {};
                 getOwnerInstance(this, {include: ["MessageGroup"]}).setState({animate: false});
             } catch (err) {
                 // Something (not surprisingly) broke, but this isn't critical enough to completely bail over
-                //console.error("DiscordAutoGif", this, err);
+                console.error("DiscordAutoGif", this, err);
                 return;
             }
         });
